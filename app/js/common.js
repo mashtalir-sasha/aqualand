@@ -9,16 +9,6 @@ $(function() {
 	e.preventDefault();
 	});
 
-	// Меню при скроле
-	$(window).scroll(function(){
-		var topline = $(window).scrollTop();
-		if ( topline > 650 ) {
-			$(".posf").addClass('show');
-		} else {
-			$(".posf").removeClass('show');
-		};
-	});
-
 	// Клик по гамбургеру на моб версии
 	$('.nav-mob__link').click(function() {
 		$('.nav-mob').toggleClass('show');
@@ -26,7 +16,6 @@ $(function() {
 	$('.nav-list__item').click(function() {
 		$('.nav-mob').removeClass('show');
 	});
-
 
 	// Отправка формы
 	$('form').submit(function() {
@@ -52,14 +41,6 @@ $(function() {
 	$('.fancybox').fancybox({
 		margin: 0,
 		padding: 0
-	});
-
-	//Якорь наверх
-	$("[href='#top']").click(function(e){
-		$('html, body').stop().animate({
-			scrollTop: $('#top').offset().top
-		}, 300);
-		e.preventDefault();
 	});
 
 	$('.portfolio-slider').slick({
@@ -101,7 +82,6 @@ $(function() {
 		arrows: false,
 		focusOnSelect: true,
 	});
-
 
 	$('.mathHeight').matchHeight();
 	$('.offer-item__txt_grey').matchHeight();
