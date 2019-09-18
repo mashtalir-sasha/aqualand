@@ -9,6 +9,8 @@
 
 //Large: ≥1200px  max-width: 1439px
 +media-breakpoint-down(lg)
+	.content
+		padding-top: 99px
 	.nav
 		&-list
 			&__item
@@ -63,6 +65,8 @@
 
 //Medium: ≥992px max-width: 1199px
 +media-breakpoint-down(md)
+	.content
+		padding-top: 104px
 	.nav
 		&-mob
 			overflow: hidden
@@ -92,6 +96,9 @@
 		&-phone
 			max-width: 180px
 			margin-left: 10px	
+		&-info
+			left: 0
+			right: inherit
 	.directions
 		&-item
 			&__img
@@ -143,6 +150,8 @@
 			height: 100%
 		&-ttl
 			margin-top: 0
+		&_saunu
+			margin-bottom: 0
 	.calculator
 		&-content
 			margin-top: 0
@@ -168,7 +177,8 @@
 +media-breakpoint-down(sm)
 	.head
 		&-name
-			margin: 0 auto 70px
+			display: none
+			//margin: 0 auto 70px
 		&-ttl
 			text-align: center
 			&:before
@@ -299,6 +309,8 @@
 			text-align: center
 		&-block
 			justify-content: space-between
+	.ma20
+		margin: 0 auto 20px
 
 //Extra small: ≥576px max-width: 767px
 +media-breakpoint-down(xs)
@@ -361,15 +373,24 @@
 			&_mt
 				margin-bottom: 0
 				margin-top: 0
+		&_bani
+			.offer-item_mt
+				margin-bottom: 40px
+			.offer-item_mt.mb0, .offer-item.mb0
+				margin-bottom: 0
 	.calculator
 		background-image: none
 		background-color: #228de8
 	.bani
 		&-btn
 			font-size: 16px
+	.privilege .col-sm-6:nth-child(4) .privilege-item
+		margin-bottom: 90px
 
 //Extra small: >0 max-width: 575px
 +media-breakpoint-down(xxs)
+	.content
+		padding-top: 95px
 	.directions, .about, .reason, .project, .advantage, .structure, .catalog, .offer, .calculator, .privilege
 		&-ttl
 			font-size: 28px

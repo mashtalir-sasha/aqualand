@@ -4,7 +4,7 @@ $(function() {
 	$('.anchor').bind("click", function(e){
 		var anchor = $(this);
 		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top-106 // отступ от меню
+			scrollTop: $(anchor.attr('href')).offset().top-100 // отступ от меню
 		}, 500);
 	e.preventDefault();
 	});
@@ -27,21 +27,6 @@ $(function() {
 		$('.nav-mob').removeClass('show');
 	});
 
-	// Формирование полей и заголовков формы в мод окне
-	$('.modal').click(function(){
-		var ttl = $(this).data('title');
-		var subTtl = $(this).data('subtitle');
-		var text = $(this).data('text');
-		var btn = $(this).data('btn');
-		var goal = $(this).data('goal');
-		var subject = $(this).data('subject');
-		$('.ttl').html(ttl);
-		$('.subTtl').html(subTtl);
-		$('.text').html(text);
-		$('.btn').html(btn);
-		$('.goal').val(goal);
-		$('.subject').val(subject);
-	});
 
 	// Отправка формы
 	$('form').submit(function() {
@@ -64,7 +49,7 @@ $(function() {
 	});
 
 	// Инит фансибокса
-	$('.fancybox, .modal').fancybox({
+	$('.fancybox').fancybox({
 		margin: 0,
 		padding: 0
 	});
@@ -135,6 +120,10 @@ $(function() {
 			$(this).find('.calculator-content').css('display', 'none');
 			$(this).find('.banya').css('display', 'flex');
 		}
+	});
+
+	$('.nav-phone__ico').click(function() {
+		$('.nav-info').toggleClass('show');
 	});
 	
 });
