@@ -21,6 +21,574 @@
 
 <body>
 
+	<div class="content">
+
+		<nav class="nav">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-2 col-6">
+						<a href="/"><img src="images/logo.svg" alt="Aqualand" class="nav-logo img-r"></a>
+					</div>
+					<div class="col-lg-8 d-none d-lg-block">
+						<ul class="nav-list">
+							<li class="nav-list__item"><a href="#">Главная</a></li>
+							<li class="nav-list__item"><a href="#">Бассейны</a></li>
+							<li class="nav-list__item"><a href="#">Русские бани и финские сауны</a></li>
+							<li class="nav-list__item"><a href="#">Турецкие хамаммы</a></li>
+							<li class="nav-list__item"><a href="#">О нас</a></li>
+							<li class="nav-list__item"><a href="#">Заказать проект</a></li>
+							<li class="nav-list__item"><a href="#">Галерея</a></li>
+							<li class="nav-list__item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-6">
+						<div class="nav-phone d-none d-lg-block">
+							<a href="tel:+7 (727) 382-23-60" class="nav-phone__link">+7 (727) 382-23-60</a>
+							<i class="nav-phone__ico"></i>
+						</div>
+						<div class="nav-mob__link"></div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-mob d-block d-lg-none">
+				<ul class="nav-list">
+					<li class="nav-list__item"><a href="#">Главная</a></li>
+					<li class="nav-list__item"><a href="#">Бассейны</a></li>
+					<li class="nav-list__item"><a href="#">Русские бани и финские сауны</a></li>
+					<li class="nav-list__item"><a href="#">Турецкие хамаммы</a></li>
+					<li class="nav-list__item"><a href="#">О нас</a></li>
+					<li class="nav-list__item"><a href="#">Заказать проект</a></li>
+					<li class="nav-list__item"><a href="#">Галерея</a></li>
+					<li class="nav-list__item"><a href="#">Контакты</a></li>
+				</ul>
+			
+				<div class="nav-phone">
+					<a href="tel:+7 (727) 382-23-60" class="nav-phone__link">+7 (727) 382-23-60</a>
+					<i class="nav-phone__ico"></i>
+				</div>
+			</nav>
+		</nav>
+
+		<header class="head">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-8 col-md-10">
+						<div class="head-name">Aqualand Group</div>
+						<h1 class="head-ttl"><b>21 год</b> <span>на территории Казахстана и Средний Азии мы делаем воду чистой, а пар лёгким!</span></h1>
+						<h2 class="head-subttl"><span>Проектируем и строим: Бассейны, Сауны, Русские Бани, Турецкие Хаммамы, занимаемся поставкой и продажей оборудования и делаем все для Вашего комфорта и отдыха</span></h2>
+						<a href="#calc" class="head-btn anchor">Просчитать стоимость</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="directions">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="directions-ttl">Наши <span>Направления:</span></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="directions-item">
+							<div class="directions-item__img i1"></div>
+							<p class="directions-item__name">Строительство<br>бассейнов</p>
+							<a href="#" class="directions-item__link">Подробнее</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="directions-item">
+							<div class="directions-item__img i2"></div>
+							<p class="directions-item__name">Строительство<br>Русских Бань</p>
+							<a href="bani-i-saynu.html" class="directions-item__link">Подробнее</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="directions-item directions-item_sm directions-item_xs">
+							<div class="directions-item__img i3"></div>
+							<p class="directions-item__name">Строительство<br>Финских Саун</p>
+							<a href="bani-i-saynu.html" class="directions-item__link">Подробнее</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="directions-item directions-item_sm">
+							<div class="directions-item__img i4"></div>
+							<p class="directions-item__name">Строительство Турецких<br>Хамаммов</p>
+							<a href="hammam.html" class="directions-item__link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<form class="calculator form_check">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="calculator-ttl">Рассчитать стоимость Вашего объекта:</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="calculator-flex calculator-flex_mb">
+							<div class="calculator-select calculator-select_type">
+								<select name="type" id="type">
+									<option data-id="1" value="Бассейн">Бассейн</option>
+									<option data-id="2" value="Хаммам">Хаммам</option>
+								</select>
+							</div>
+							<div class="calculator-select">
+								<select name="salon">
+									<option>Выберите шоурум:</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center pool calculator-content">
+					<div class="col-md-6 calculator-content_bg">
+						<div class="calculator-flex">
+							<div class="calculator-flex__left">
+								<label class="calculator-input">
+									<span>Длина:</span>
+									<input type="text" name="length">
+								</label>
+								<label class="calculator-input">
+									<span>Ширина:</span>
+									<input type="text" name="width">
+								</label>
+								<label class="calculator-input">
+									<span>Ширина:</span>
+									<input type="text" name="depth">
+								</label>
+							</div>
+							<div class="calculator-flex__right">
+								<label class="calculator-checkbox">
+									<input type="checkbox" name="private">
+									<div class="calculator-checkbox__text">Частный</div>
+								</label>
+								<label class="calculator-checkbox">
+									<input type="checkbox" name="public">
+									<div class="calculator-checkbox__text">Общественный</div>
+								</label>
+								<label class="calculator-checkbox">
+									<input type="checkbox" name="filter1">
+									<div class="calculator-checkbox__text">Фильтрация песочная</div>
+								</label>
+								<label class="calculator-checkbox">
+									<input type="checkbox" name="filter2">
+									<div class="calculator-checkbox__text">Фильтрация навесная</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="images/calc-img1.jpg" alt="Aqualand" class="calculator-img img-r">
+					</div>
+				</div>
+				<div class="row align-items-center hamam calculator-content" style="display: none;">
+					<div class="col-md-6 calculator-content_bg">
+						<div class="calculator-flex">
+							<label class="calculator-input calculator-input_hammam">
+								<span>Объем помещения м<sup>3</sup>:</span>
+								<input type="text" name="length">
+							</label>
+						</div>
+						<h4 class="calculator-note">Отделка:</h4>
+						<div class="calculator-flex calculator-flex_hammam">
+							<label class="calculator-checkbox calculator-checkbox_hammam">
+								<input type="checkbox" name="material[1]">
+								<div class="calculator-checkbox__text">Керамика</div>
+							</label>
+							<label class="calculator-checkbox calculator-checkbox_hammam">
+								<input type="checkbox" name="material[2]">
+								<div class="calculator-checkbox__text">Мрамор</div>
+							</label>
+							<label class="calculator-checkbox calculator-checkbox_hammam">
+								<input type="checkbox" name="material[3]">
+								<div class="calculator-checkbox__text">Мозаика</div>
+							</label>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="images/calc-img2.jpg" alt="Aqualand" class="calculator-img img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h4 class="calculator-subttl">Для просчета стоимости оставьте Ваши данные</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="rline">
+							<input type="text" name="name" class="rfield" placeholder="Имя:">
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="rline">
+							<input type="text" name="phone" class="rfield" placeholder="Телефон:">
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="rline">
+							<input type="text" name="email" class="rfield" placeholder="Е-mail:">
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<button type="submit" class="btnsubmit calculator-btn">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="about-ttl">О Нас</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="about-txt"><b>Компания «Aqualand Group»</b> представлена филиалами в крупнейших городах Казахстана - Нур-Султан и Алматы, а также в столице Киргизии - г. Бишкеке. Вы можете быть уверены, в каждом представительстве мы предоставляем полный спектр услуг, соответствующих заявленному уровню качества.</p>
+						<p class="about-txt">Команда опытных специалистов компании <b>«Aqualand Group»</b> способна выполнить проект, монтаж и установку оборудования для бассейнов и саун высокой степени сложности. Все наши инженеры проходят обучение и курсы повышения квалификации на специальных технических семинарах фирм-производителей.</p>
+					</div>
+					<div class="col-md-6">
+						<img src="images/about-img.jpg" alt="Aqualand" class="img-r about-img">
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-7 order-md-2">
+						<p class="about-txt"><b>«Aqualand Group»</b> является одним из признанных лидеров на рынке Средней Азии и Казахстана среди компаний, занимающихся проектированием и реко- нструкцией бассейнов, поставкой и продажей оборудования для бассейнов.<br>Кроме того, мы производим телескопические павильоны, фильтровальные станции «Aquastar», специальный бордюрный камень для бассейнов и многое другое.</p>
+						<p class="about-txt">Для надежной и функциональный работы бассейна мы используем только сертифицированные фильтровальные установки и насосные системы для бассейна, средства водоподготовки, дезинфекции, химические препараты по уходу за водой в бассейне.</p>
+					</div>
+					<div class="col-md-5 order-md-1">
+						<img src="images/about-map.png" alt="Aqualand" class="img-r about-map">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reason">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-auto">
+						<h3 class="reason-ttl"><span>6 причин</span><br>работать с нами</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico1.svg" alt="Aqualand">
+								<span class="reason-item__numb">01</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>Строим и реконструируем</p>
+								<span>бассейны любой сложности</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico2.svg" alt="Aqualand">
+								<span class="reason-item__numb">02</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>Работаем с 1998 года</p>
+								<span>и представлены в 5 торговых офисах</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico3.svg" alt="Aqualand">
+								<span class="reason-item__numb">03</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>В каждом городе имеем свои бригады</p>
+								<span>квалифицированных монтажников</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico4.svg" alt="Aqualand">
+								<span class="reason-item__numb">04</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>Собственное производство </p>
+								<span>позволяет поддерживать невысокие цены при неизменном качестве</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico5.svg" alt="Aqualand">
+								<span class="reason-item__numb">05</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>Оперативное изготовление</p>
+								<span>бассейнов в срок от 3-х дней</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="reason-item">
+							<div class="reason-item__ico">
+								<img src="images/reason-ico6.svg" alt="Aqualand">
+								<span class="reason-item__numb">06</span>
+							</div>
+							<div class="reason-item__txt">
+								<p>Комплексное решение</p>
+								<span>независимо от стоимости проекта</span>
+							</div>
+						</div>
+					</div>
+					<div class="reason-line"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-sm-auto">
+						<h3 class="project-ttl">Получите <span>бесплатно</span> свой эксклюзивный <span>3D проект</span></h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project_bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<h3 class="project-subttl"><span>Эксклюзивный 3D проект<br>Экономия -500$</span></h3>
+						<p class="project-text">Оставьте заявку на <b>бесплатный 3D проект</b> на выбор:</p>
+						<ul class="project-list">
+							<li class="project-list__item">Басейн</li>
+							<li class="project-list__item">Русская баня</li>
+							<li class="project-list__item">Финская сауна</li>
+							<li class="project-list__item">Турецкий хаммам</li>
+						</ul>
+						<p class="project-note">*залоговая сумма возвращается после реализации проекта</p>
+					</div>
+					<div class="col-lg-5 offset-lg-1 col-md-6">
+						<form action="mail.php" class="project-form form_check">
+							<h4 class="project-form__ttl">Заполните форму заявки, чтобы получить дизайн-проект в подарок</h4>
+							<div class="rline">
+								<input type="text" name="name" class="rfield project-form__input" placeholder="Введите ваше имя:">
+							</div>
+							<div class="rline">
+								<input type="text" name="phone" class="rfield project-form__input" placeholder="Введите ваш телефон:">
+							</div>
+							<div class="rline rline_select">
+								<select name="salon" class="project-form__input">
+									<option>Выберите шоурум:</option>
+								</select>
+							</div>
+							<button type="submit" class="btnsubmit project-form__btn">Получить 3D-проект бесплатно</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="portfolio-ttl">Наши <span>работы</span></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<div class="portfolio-slider">
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+							<div>
+								<img src="images/potfolio-img1.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="portfolio-nav">
+							<img src="images/potfolio-img1.jpg" alt="">
+							<img src="images/potfolio-img1.jpg" alt="">
+							<img src="images/potfolio-img1.jpg" alt="">
+							<img src="images/potfolio-img1.jpg" alt="">
+							<img src="images/potfolio-img1.jpg" alt="">
+							<img src="images/potfolio-img1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="partners-ttl">Наши <span>партнеры</span></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-6">
+						<img src="images/partner1.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner2.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner3.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner4.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner5.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner6.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner7.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner8.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner9.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner10.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner11.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner12.png" alt="Aqualand" class="img-r partners-img">
+					</div>
+				</div>
+				<div class="partners-line"></div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 class="contacts-ttl">Наши <span>контакты</span></h3>
+						<p class="contacts-subttl">Мы работаем по всей территории Казахстана и Кыргызкой Республики</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-4 col-sm-6">
+						<div class="contacts-item">
+							<p class="contacts-item__addr">050016 Казахстан, Нур-Султан, пр. Суюнбая, 53</p>
+							<a href="mailto:almaty@aqualand.su" class="contacts-item__eml">almaty@aqualand.su</a>
+							<a href="tel:+77273646905" class="contacts-item__tel">+7 (727) 364 69 05</a>
+							<img src="images/map1.jpg" alt="Aqualand" class="img-r contacts-item__img">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contacts-item">
+							<p class="contacts-item__addr">050016 Казахстан, Алматы, ул. Саина 184</p>
+							<a href="mailto:plus@aqualand.su" class="contacts-item__eml">plus@aqualand.su</a>
+							<a href="tel:+77273647281" class="contacts-item__tel">+7 (727) 364 72 81</a>
+							<img src="images/map2.jpg" alt="Aqualand" class="img-r contacts-item__img">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contacts-item">
+							<p class="contacts-item__addr">010008 Казахстан, Астана, ул. Бейсекбаева, 18б</p>
+							<a href="mailto:plus@aqualand.su" class="contacts-item__eml">plus@aqualand.su</a>
+							<a href="tel:+77172249185" class="contacts-item__tel">+7 (7172) 24 91 85</a>
+							<img src="images/map3.png" alt="Aqualand" class="img-r contacts-item__img">
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+						<div class="contacts-item">
+							<p class="contacts-item__addr">72055 Кыргызкая Республика, Бишкек, ул. Ахунбаева 133</p>
+							<a href="mailto:bishkek@aqualand.su" class="contacts-item__eml">bishkek@aqualand.su</a>
+							<a href="tel:+9967312)9662702" class="contacts-item__tel">+996 (7312) 966 27 02</a>
+							<img src="images/map4.png" alt="Aqualand" class="img-r contacts-item__img">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contacts-item">
+							<p class="contacts-item__addr">Россия, Москва, ул.Рябиновая, 53</p>
+							<a href="mailto:shop@betapool.ru" class="contacts-item__eml">shop@betapool.ru</a>
+							<a href="tel:+79037992057" class="contacts-item__tel">+79037992057</a>
+							<img src="images/map5.png" alt="Aqualand" class="img-r contacts-item__img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 align-self-center col-sm-4">
+						<a href="/"><img src="images/logo.svg" alt="Aqualand" class="foot-logo img-r"></a>
+					</div>
+					<div class="col-lg-2 offset-lg-1 col-md-3 col-sm-4">
+						<a href="#" class="foot-link">Главная</a>
+						<a href="#" class="foot-link">Бассейны</a>
+						<a href="#" class="foot-link">русские Бани</a>
+						<a href="#" class="foot-link">финская сауна</a>
+						<a href="#" class="foot-link">турецкий Хаммам</a>
+					</div>
+					<div class="col-md-2 col-sm-4">
+						<a href="#" class="foot-link">Aqualand Group</a>
+						<a href="#" class="foot-link">Дизайн проект</a>
+						<a href="#" class="foot-link">Наши работы</a>
+						<a href="#" class="foot-link">Контакты</a>
+					</div>
+					<div class="col-md-3 align-self-end col-sm-6">
+						<div class="foot-soc">
+							<a href="" class="foot-soc__link"><img src="images/fb.svg" alt="Aqauland"></a>
+							<a href="" class="foot-soc__link"><img src="images/inst.svg" alt="Aqauland"></a>
+							<a href="" class="foot-soc__link"><img src="images/yt.svg" alt="Aqauland"></a>
+						</div>
+						<p class="foot-note">«Клуб друзей Aqauland Group» дисконтная карта»</p>
+					</div>
+					<div class="col-md-2 align-self-center col-sm-6">
+						<a href="https://wamp.com.ua/" target="_blank" class="dev">
+							<span>Разработано командой:</span>
+							<img src="images/wamp.png" alt="wamp">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

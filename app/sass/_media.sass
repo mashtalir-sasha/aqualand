@@ -9,33 +9,468 @@
 
 //Large: ≥1200px  max-width: 1439px
 +media-breakpoint-down(lg)
+	.nav
+		&-list
+			&__item
+				a
+					font-size: 13px
+		&-phone
+			&__link
+				font-size: 14px
+	.directions
+		&-item
+			&__img
+				max-height: 330px
+	.reason
+		&-item
+			&__ico
+				min-width: 120px
+				min-height: 120px
+				max-width: 120px
+				max-height: 120px
+				img
+					margin: 30px auto
+	.project
+		&-subttl
+			span
+				font-size: 38px
+		&-form
+			&__btn
+				font-size: 19px
+	.structure
+		&-txt
+			&:last-child
+				margin-bottom: 40px
+	.calculator
+		&-select
+			margin-right: 20px
+			select
+				font-size: 20px
+		&-flex
+			&__left
+				margin-right: 20px
+		&-content
+			margin-top: -50px
+	.privilege
+		&-item
+			&__ico
+				min-width: 120px
+				min-height: 120px
+				max-width: 120px
+				max-height: 120px
+				img
+					margin: 30px auto
 
 //Medium: ≥992px max-width: 1199px
 +media-breakpoint-down(md)
+	.nav
+		&-mob
+			overflow: hidden
+			max-height: 0
+			height: 100%
+			background-color: $accent
+			padding: 0
+			transition: all ease .3s
+			&.show
+				max-height: 500px
+				padding-top: 25px
+				transition: all ease .3s
+			&__link
+				width: 32px
+				height: 32px
+				background-image: url(../images/mob-link.svg)
+				float: right
+		&-list
+			display: block
+			padding: 0 10px
+			&__item
+				max-width: inherit
+				float: none
+				margin-bottom: 10px
+				a
+					text-align: left
+		&-phone
+			max-width: 180px
+			margin-left: 10px	
+	.directions
+		&-item
+			&__img
+				max-height: 275px
+			&__name
+				font-size: 18px
+	.reason
+		&-item
+			&__ico
+				min-width: 100px
+				min-height: 100px
+				max-width: 100px
+				max-height: 100px
+				img
+					margin: 20px auto
+	.project
+		&-subttl
+			span
+				font-size: 30px
+	.portfolio
+		&-slider
+			img
+				max-width: 768px
+				margin: 0 auto
+			.slick-arrow
+				&.slick-prev
+					left: 0
+				&.slick-next
+					right: 0
+	.advantage
+		&-item
+			&__numb
+				font-size: 110px
+			&_bani
+				margin-bottom: 40px
+	.structure
+		&:before
+			max-height: 420px
+	.case
+		&-slider
+			.slick-arrow
+				&.slick-prev
+					left: -80px
+				&.slick-next
+					right: -80px
+	.catalog
+		padding: 50px 0
+		&:before
+			height: 100%
+		&-ttl
+			margin-top: 0
+	.calculator
+		&-content
+			margin-top: 0
+		&-input
+			span
+				font-size: 20px
+			input
+				max-width: 70px
+		&-checkbox
+			&__text
+				font-size: 18px
+	.privilege
+		&-item
+			&__ico
+				min-width: 100px
+				min-height: 100px
+				max-width: 100px
+				max-height: 100px
+				img
+					margin: 20px auto
 
 //Small: ≥768px max-width: 991px
 +media-breakpoint-down(sm)
+	.head
+		&-name
+			margin: 0 auto 70px
+		&-ttl
+			text-align: center
+			&:before
+				width: 120%
+				right: -50px
+		&-subttl
+			text-align: center
+			&:before
+				width: 120%
+				right: -50px
+		&-btn
+			margin: 0 auto
+	.directions
+		&-item
+			margin-bottom: 40px
+			&_sm
+				margin-bottom: 0
+			&__img
+				max-height: 425px
+	.about
+		&-img
+			margin: 0 auto 20px
+		&-map
+			margin: 0 auto
+		&-txt
+			&:last-child
+				margin-bottom: 20px
+	.project
+		&-subttl
+			margin: 0 auto 30px
+			span
+				display: block
+				text-align: center
+		&-text
+			text-align: center
+		&-list
+			display: table
+			margin: 0 auto 30px
+			&__item
+				display: table
+		&-note
+			text-align: center
+			margin-bottom: 30px
+	.portfolio
+		&-slider
+			img
+				max-width: 600px
+			.slick-arrow
+				&.slick-prev
+					left: -20px
+				&.slick-next
+					right: -20px
+	.dev
+		float: right
+	.hammam
+		&:before
+			width: 100%
+			right: 0
+		&-ttl
+			text-align: center
+			&:before
+				width: 99%
+				right: 0
+				background: linear-gradient(90deg, rgba(11, 205, 254, 0.57) 0%, rgba(122, 180, 215, 0.593845) 80%, rgba(0, 0, 0, 0) 100%)
+		&-subttl
+			margin: 0 auto 20px
+			text-align: center
+			span
+				color: #000
+			&:before
+				width: 100%
+				right: 0
+				background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 47.29%, rgba(255, 255, 255, 0) 94.97%)
+		&-btn
+			margin: 0 auto
+	.advantage
+		&-item
+			margin-bottom: 40px
+			&_last
+				margin-bottom: 0
+			&__numb
+				top: 0
+	.structure
+		&-img
+			display: table
+			margin: 0 auto 80px
+		&-list
+			margin-bottom: 40px
+	.case
+		&-slider
+			img
+				max-width: 550px
+				margin: 0 auto
+			.slick-arrow
+				&.slick-prev
+					left: 0
+				&.slick-next
+					right: 0
+		&-nav
+			margin-bottom: 20px
+	.catalog
+		&-img
+			margin: 0 auto
+	.offer
+		&-item
+			&_mt
+				margin-top: 40px
+	.calculator
+		padding-bottom: 50px
+		&-flex
+			justify-content: space-between
+		&-checkbox
+			display: block
+		&-img
+			margin-top: 40px
+		.rline
+			margin-bottom: 20px
+	.bani
+		&:before
+			content: ''
+			width: 100%
+			height: 100%
+			background-color: rgba(#000, .3)
+			position: absolute
+			top: 0
+			left: 0
+		&-ttl
+			text-align: center
+		&-block
+			justify-content: space-between
 
 //Extra small: ≥576px max-width: 767px
 +media-breakpoint-down(xs)
+	.head
+		&-name
+			text-align: center
+			font-size: 56px
+	.directions
+		&:before
+			height: 80%
+		&-item
+			max-width: 320px
+			margin: 0 auto 40px
+			&__img
+				max-height: 400px
+			&_xs
+				margin-bottom: 40px
+	.portfolio
+		&-slider
+			img
+				max-width: 80%
+	.contacts
+		&-item
+			&__img
+				margin: 0 auto
+	.foot
+		&-logo
+			margin: 0 auto 20px
+		&-link
+			text-align: center
+		&-soc
+			display: table
+			margin: 20px auto
+		&-note
+			text-align: center
+			margin: 0 auto 20px
+	.dev
+		float: none
+	.advantage
+		&-item
+			margin-bottom: 40px
+			&__txt
+				font-size: 16px
+	.structure
+		&:before
+			max-height: 240px
+	.catalog
+		&-form
+			display: table
+			margin: 0 auto
+			.rline
+				margin-bottom: 20px
+			&__btn
+				margin: 0 auto
+	.offer
+		&-item
+			margin-bottom: 40px
+			&__img
+				margin: 0 auto
+			&_mt
+				margin-bottom: 0
+				margin-top: 0
+	.calculator
+		background-image: none
+		background-color: #228de8
+	.bani
+		&-btn
+			font-size: 16px
 
 //Extra small: >0 max-width: 575px
 +media-breakpoint-down(xxs)
-
-
-/*==========  Mobile First  ==========*/
-
-//Extra small: <576px
-+media-breakpoint-up(xs)
-
-//Small: ≤576px
-+media-breakpoint-up(sm)
-
-//Medium: ≤768px
-+media-breakpoint-up(md)
-
-//Large: ≤992px
-+media-breakpoint-up(lg)
-
-//Extra large: ≤1200px
-+media-breakpoint-up(xl)
+	.directions, .about, .reason, .project, .advantage, .structure, .catalog, .offer, .calculator, .privilege
+		&-ttl
+			font-size: 28px
+	.head
+		&-ttl
+			font-size: 28px
+			b
+				font-size: 40px
+	.about
+		&-txt
+			font-size: 16px
+	.project
+		&-form
+			padding: 25px
+		&-form
+			&__input
+				padding: 15px 30px
+				max-width: 300px
+	.portfolio
+		&-slider
+			img
+				max-width: 75%
+			.slick-arrow
+				width: 40px
+				height: 40px
+				margin-top: -20px
+				&.slick-prev
+					left: 0
+					&:before
+						left: 6px
+						top: 6px
+				&.slick-next
+					right: 0
+					&:before
+						left: 6px
+						top: 6px
+	.hammam
+		&-ttl
+			font-size: 28px
+		&-btn
+			font-size: 16px
+	.case
+		&-slider
+			img
+				max-width: 75%
+			.slick-arrow
+				width: 40px
+				height: 40px
+				margin-top: -20px
+				&.slick-prev
+					left: 0
+					&:before
+						left: 6px
+						top: 6px
+				&.slick-next
+					right: 0
+					&:before
+						left: 6px
+						top: 6px
+		&-txt
+			font-size: 16px
+		&-btn
+			font-size: 16px
+	.offer
+		&-item
+			&__txt
+				font-size: 18px
+	.calculator
+		&-flex
+			display: block
+			&__left
+				margin: 0 auto
+			&__right
+				margin: 20px auto 0
+		&-select
+			margin: 0 auto 20px
+		&-content
+			&_bg
+				&:before
+					width: 120vh
+					right: 0
+		&-subttl
+			font-size: 28px
+	.bani
+		&-ttl
+			font-size: 32px
+		&-block
+			display: block
+		&-item
+			margin: 0 auto 40px
+			&:last-child
+				margin-bottom: 0
+	.advantage
+		&-item
+			&_bani
+				&_last
+					margin-bottom: 0
+	.structure
+		&-video
+			min-height: 360px
+	.privilege
+		&-item
+			&_last
+				margin-bottom: 0

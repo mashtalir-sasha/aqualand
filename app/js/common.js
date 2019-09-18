@@ -20,11 +20,11 @@ $(function() {
 	});
 
 	// Клик по гамбургеру на моб версии
-	$('.mob-mnu__humb').click(function() {
-		$('.mob-mnu-list').toggleClass('show');
+	$('.nav-mob__link').click(function() {
+		$('.nav-mob').toggleClass('show');
 	});
-	$('.mob-mnu__li').click(function() {
-		$('.mob-mnu-list').removeClass('show');
+	$('.nav-list__item').click(function() {
+		$('.nav-mob').removeClass('show');
 	});
 
 	// Формирование полей и заголовков формы в мод окне
@@ -77,4 +77,64 @@ $(function() {
 		e.preventDefault();
 	});
 
+	$('.portfolio-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.portfolio-nav'
+	});
+	$('.portfolio-nav').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		asNavFor: '.portfolio-slider',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+		]
+	});
+
+	$('.case-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav'
+	});
+	$('.case-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+
+	$('.mathHeight').matchHeight();
+	$('.offer-item__txt_grey').matchHeight();
+
+	$('.calculator').change(function() {
+		var	type = $('#type').find('option:selected').data('id');
+		if (type == 1) {
+			$(this).find('.calculator-content').css('display', 'none');
+			$(this).find('.pool').css('display', 'flex');
+		} 
+		if (type == 2) {
+			$(this).find('.calculator-content').css('display', 'none');
+			$(this).find('.hamam').css('display', 'flex');
+		}
+		if (type == 3) {
+			$(this).find('.calculator-content').css('display', 'none');
+			$(this).find('.banya').css('display', 'flex');
+		}
+	});
+	
 });
