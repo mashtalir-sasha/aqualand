@@ -203,6 +203,7 @@ button
 		border: 1px solid #9A1515
 		padding: 15px 30px
 		transition: all ease .3s
+		animation: pulse 2.5s linear 2.5s infinite alternate
 		&:hover
 			transition: all ease .3s
 			background: linear-gradient(180deg, #EB332D 0%, #D0001C 100%)
@@ -441,6 +442,7 @@ button
 		padding: 15px 30px
 		margin: 0 auto
 		transition: all ease .3s
+		animation: pulse 2s linear 2s infinite alternate
 		&:hover
 			transition: all ease .3s
 			background: linear-gradient(180deg, #EB332D 0%, #D0001C 100%)
@@ -696,6 +698,7 @@ button
 			padding: 15px 30px
 			margin: 0 auto
 			transition: all ease .3s
+			animation: pulse 2s linear 2s infinite alternate
 			&:hover
 				transition: all ease .3s
 				background: linear-gradient(180deg, #EB332D 0%, #D0001C 100%)
@@ -971,6 +974,7 @@ button
 		border: 1px solid #9A1515
 		padding: 15px 30px
 		transition: all ease .3s
+		animation: pulse 2s linear 2s infinite alternate
 		&:hover
 			transition: all ease .3s
 			background: linear-gradient(180deg, #EB332D 0%, #D0001C 100%)
@@ -1279,6 +1283,7 @@ button
 			border: 1px solid #9A1515
 			padding: 15px 60px
 			transition: all ease .3s
+			animation: pulse 2s linear 2s infinite alternate
 			&:hover
 				transition: all ease .3s
 				background: linear-gradient(180deg, #EB332D 0%, #D0001C 100%)
@@ -1414,6 +1419,7 @@ button
 		color: #fff
 		padding: 15px 30px
 		margin: 0 auto
+		animation: pulse 2s linear 2s infinite alternate
 		&_blue
 			background: linear-gradient(180deg, #20489B 0%, #2E68DF 100%)
 			&:hover
@@ -1496,5 +1502,196 @@ button
 	padding: 0
 	.project-form__ttl
 		text-align: center
+
+@keyframes pulse
+	from
+		transform: scale3d(1, 1, 1)
+	50%
+		transform: scale3d(0.95, 0.95, 0.95)
+	to
+	transform: scale3d(1, 1, 1)
+
+@keyframes fadeInLeft
+	from
+		opacity: 0
+		transform: translate3d(-100%, 0, 0)
+	to
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+.fadeIn
+	animation-name: fadeIn
+
+.fadeInLeft
+	animation-name: fadeInLeft
+
+.directions-item, .reason-item, .reason-item__numb, .partners .col-sm-3 img, .advantage-item, .advantage-item__numb, .privilege-item, .privilege-item__numb
+	opacity: 0
+
+.directions.animated
+	.col-md-3:nth-child(1)
+		.directions-item
+			animation-name: fadeInLeft
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-3:nth-child(2)
+		.directions-item
+			animation-name: fadeInLeft
+			animation-delay: 0.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-3:nth-child(3)
+		.directions-item
+			animation-name: fadeInLeft
+			animation-delay: 1s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-3:nth-child(4)
+		.directions-item
+			animation-name: fadeInLeft
+			animation-delay: 1.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+
+.reason.animated
+	.reason-item
+		animation-name: fadeIn
+		animation-duration: 0.5s
+		animation-fill-mode: both
+	.col-md-4:nth-child(1)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(2)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 0.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(3)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(4)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(5)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(6)
+		.reason-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+
+.partners.animated
+	.col-sm-3:nth-child(1), .col-sm-3:nth-child(5), .col-sm-3:nth-child(9)
+		img
+			animation-name: fadeIn
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-3:nth-child(2), .col-sm-3:nth-child(6), .col-sm-3:nth-child(10)
+		img
+			animation-name: fadeIn
+			animation-delay: 1s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-3:nth-child(3), .col-sm-3:nth-child(7), .col-sm-3:nth-child(11)
+		img
+			animation-name: fadeIn
+			animation-delay: 1.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-3:nth-child(4), .col-sm-3:nth-child(8), .col-sm-3:nth-child(12)
+		img
+			animation-name: fadeIn
+			animation-delay: 2s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+
+.advantage.animated
+	.advantage-item
+		animation-name: fadeIn
+		animation-delay: 0.5s
+		animation-duration: 0.5s
+		animation-fill-mode: both
+	.col-md-4:nth-child(1), .col-lg-3:nth-child(1)
+		.advantage-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(2), .col-lg-3:nth-child(2)
+		.advantage-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-md-4:nth-child(3), .col-lg-3:nth-child(3)
+		.advantage-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-lg-3:nth-child(4)
+		.advantage-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+
+.privilege.animated
+	.privilege-item
+		animation-name: fadeIn
+		animation-delay: 0.5s
+		animation-duration: 0.5s
+		animation-fill-mode: both
+	.col-sm-6:nth-child(1)
+		.privilege-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-6:nth-child(2)
+		.privilege-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 1.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-6:nth-child(3)
+		.privilege-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-6:nth-child(4)
+		.privilege-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 2.5s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+	.col-sm-6:nth-child(5)
+		.privilege-item__numb
+			animation-name: fadeInLeft
+			animation-delay: 3s
+			animation-duration: 0.5s
+			animation-fill-mode: both
+
 
 @import "media" // Always at the end
