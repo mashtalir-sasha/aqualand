@@ -25,14 +25,14 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-2 col-6">
-					<a href="/"><img src="images/logo.svg" alt="Aqualand" class="nav-logo img-r"></a>
+					<a href="https://aqualand.kz/"><img src="images/logo.svg" alt="Aqualand" class="nav-logo img-r"></a>
 				</div>
 				<div class="col-lg-8 d-none d-lg-block">
 					<ul class="nav-list">
-						<li class="nav-list__item"><a href="/">Главная</a></li>
+						<li class="nav-list__item"><a href="http://dev.wamp.com.ua/aqua">Главная</a></li>
 						<li class="nav-list__item"><a href="https://lp.aqualand.kz/">Бассейны</a></li>
 						<li class="nav-list__item"><a href="bani-i-saynu.html">Русские бани и финские сауны</a></li>
-						<li class="nav-list__item"><a href="hammam.html">Турецкие хамаммы</a></li>
+						<li class="nav-list__item"><a href="hammam.html">Турецкие хаммамы</a></li>
 						<li class="nav-list__item"><a href="#about" class="anchor">О нас</a></li>
 						<li class="nav-list__item"><a href="#calculate" class="anchor">Заказать проект</a></li>
 						<li class="nav-list__item"><a href="#gallery" class="anchor">Галерея</a></li>
@@ -53,7 +53,12 @@
 						<div class="nav-info__block">
 							<div class="city">г. Алматы</div>
 							<div class="phone"><a href="tel:+77273646895">+7 (727) 364 68 95</a><span>пр.Суюнбая 53</span></div>
-							<div class="phone mt12"><a href="tel:+77273647281">+7 (727) 364 72 81</a><span>ул.Саина 184 Г</span></div>
+							<div class="phone"><a href="tel:+77273647281">+7 (727) 364 72 81</a><span>ул.Саина 184 Г</span></div>
+						</div>
+						<div class="line"></div>
+						<div class="nav-info__block">
+							<div class="city">г. Бишкек</div>
+							<div class="phone"><a href="tel:+996312962701">+996 (312) 96-27-01</a><span>ул.Ахунбаева 133</span></div>
 						</div>
 					</div>
 					<div class="nav-mob__link"></div>
@@ -62,10 +67,10 @@
 		</div>
 		<nav class="nav-mob d-block d-lg-none">
 			<ul class="nav-list">
-				<li class="nav-list__item"><a href="/">Главная</a></li>
+				<li class="nav-list__item"><a href="http://dev.wamp.com.ua/aqua">Главная</a></li>
 				<li class="nav-list__item"><a href="https://lp.aqualand.kz/">Бассейны</a></li>
 				<li class="nav-list__item"><a href="bani-i-saynu.html">Русские бани и финские сауны</a></li>
-				<li class="nav-list__item"><a href="hammam.html">Турецкие хамаммы</a></li>
+				<li class="nav-list__item"><a href="hammam.html">Турецкие хаммамы</a></li>
 				<li class="nav-list__item"><a href="#about" class="anchor">О нас</a></li>
 				<li class="nav-list__item"><a href="#calculate" class="anchor">Заказать проект</a></li>
 				<li class="nav-list__item"><a href="#gallery" class="anchor">Галерея</a></li>
@@ -86,6 +91,11 @@
 					<div class="city">г. Алматы</div>
 					<div class="phone"><a href="tel:+77273646895">+7 (727) 364 68 95</a><span>пр.Суюнбая 53</span></div>
 					<div class="phone mt12"><a href="tel:+77273647281">+7 (727) 364 72 81</a><span>ул.Саина 184 Г</span></div>
+				</div>
+				<div class="line"></div>
+				<div class="nav-info__block">
+					<div class="city">г. Бишкек</div>
+					<div class="phone"><a href="tel:+996312962701">+996 (312) 96-27-01</a><span>ул.Ахунбаева 133</span></div>
 				</div>
 			</div>
 		</nav>
@@ -132,13 +142,13 @@
 						<div class="directions-item directions-item_sm directions-item_xs">
 							<div class="directions-item__img i3"></div>
 							<p class="directions-item__name">Строительство<br>Финских Саун</p>
-							<a href="bani-i-saynu.html" class="directions-item__link">Подробнее</a>
+							<a href="bani-i-saynu.html#sauna" class="directions-item__link">Подробнее</a>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="directions-item directions-item_sm">
 							<div class="directions-item__img i4"></div>
-							<p class="directions-item__name">Строительство Турецких<br>Хамаммов</p>
+							<p class="directions-item__name">Строительство Турецких<br>Хаммамов</p>
 							<a href="hammam.html" class="directions-item__link">Подробнее</a>
 						</div>
 					</div>
@@ -160,11 +170,17 @@
 								<select name="type" id="type">
 									<option data-id="1" value="Бассейн">Бассейн</option>
 									<option data-id="2" value="Хаммам">Хаммам</option>
+									<option data-id="3" value="Русская баня">Русская баня</option>
+									<option data-id="4" value="Сауна">Сауна</option>
 								</select>
 							</div>
 							<div class="calculator-select">
 								<select name="salon">
 									<option>Выберите шоурум:</option>
+									<option value="г. Астана, ул. Бейсекбаева, 18 Б">г. Астана, ул. Бейсекбаева, 18 Б</option>
+									<option value="г. Алматы, пр. Суюнбая, 53">г. Алматы, пр. Суюнбая, 53</option>
+									<option value="г. Алматы, ул. Саина, 184 Г">г. Алматы, ул. Саина, 184 Г</option>
+									<option value="г. Бишкек, ул. Ахунбаева, 133">г. Бишкек, ул. Ахунбаева, 133</option>
 								</select>
 							</div>
 						</div>
@@ -183,7 +199,7 @@
 									<input type="text" name="width">
 								</label>
 								<label class="calculator-input">
-									<span>Ширина:</span>
+									<span>Глубина:</span>
 									<input type="text" name="depth">
 								</label>
 							</div>
@@ -239,6 +255,86 @@
 						<img src="images/calc-img2.jpg" alt="Aqualand" class="calculator-img img-r">
 					</div>
 				</div>
+				<div class="row align-items-center banya calculator-content" style="display: none;">
+					<div class="col-md-6 calculator-content_bg">
+						<div class="calculator-flex align-items-start">
+							<div class="calculator-flex__left">
+								<label class="calculator-input">
+									<span>Длина:</span>
+									<input type="text" name="length">
+								</label>
+								<label class="calculator-input">
+									<span>Ширина:</span>
+									<input type="text" name="width">
+								</label>
+							</div>
+							<div class="calculator-flex__right">
+								<div class="calculator-select" style="margin-bottom: 15px;">
+									<select name="tree">
+										<option>Сорт дерева:</option>
+										<option value="Липа">Липа</option>
+										<option value="Осина">Осина</option>
+										<option value="Черная ольха">Черная ольха</option>
+										<option value="Сосна">Сосна</option>
+										<option value="Ель">Ель</option>
+										<option value="Кедр">Кедр</option>
+									</select>
+								</div>
+								<label class="calculator-checkbox">
+									<input type="radio" name="pech">
+									<div class="calculator-checkbox__text">Печь дровяная</div>
+								</label>
+								<label class="calculator-checkbox">
+									<input type="radio" name="pech">
+									<div class="calculator-checkbox__text">Печь электрическая</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="images/calc-img3.jpg" alt="Aqualand" class="calculator-img img-r">
+					</div>
+				</div>
+				<div class="row align-items-center sauna calculator-content" style="display: none;">
+					<div class="col-md-6 calculator-content_bg">
+						<div class="calculator-flex align-items-start">
+							<div class="calculator-flex__left">
+								<label class="calculator-input">
+									<span>Длина:</span>
+									<input type="text" name="length">
+								</label>
+								<label class="calculator-input">
+									<span>Ширина:</span>
+									<input type="text" name="width">
+								</label>
+							</div>
+							<div class="calculator-flex__right">
+								<div class="calculator-select" style="margin-bottom: 15px;">
+									<select name="tree">
+										<option>Сорт дерева:</option>
+										<option value="Липа">Липа</option>
+										<option value="Осина">Осина</option>
+										<option value="Черная ольха">Черная ольха</option>
+										<option value="Сосна">Сосна</option>
+										<option value="Ель">Ель</option>
+										<option value="Кедр">Кедр</option>
+									</select>
+								</div>
+								<label class="calculator-checkbox">
+									<input type="radio" name="pech">
+									<div class="calculator-checkbox__text">Печь дровяная</div>
+								</label>
+								<label class="calculator-checkbox">
+									<input type="radio" name="pech">
+									<div class="calculator-checkbox__text">Печь электрическая</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="images/calc-img3.jpg" alt="Aqualand" class="calculator-img img-r">
+					</div>
+				</div>
 				<div class="row">
 					<div class="col">
 						<h4 class="calculator-subttl">Для просчета стоимости оставьте Ваши данные</h4>
@@ -276,7 +372,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<p class="about-txt"><b>Компания «Aqualand Group»</b> представлена филиалами в крупнейших городах Казахстана - Нур-Султан и Алматы, а также в столице Киргизии - г. Бишкеке. Вы можете быть уверены, в каждом представительстве мы предоставляем полный спектр услуг, соответствующих заявленному уровню качества.</p>
+						<p class="about-txt"><b>Компания «Aqualand Group»</b> представлена филиалами в крупнейших городах Казахстана - Нур-Султан и Алматы, а также в столице Киргизии - г.Бишкеке. Вы можете быть уверены, в каждом представительстве мы предоставляем полный спектр услуг, соответствующих заявленному уровню качества.</p>
 						<p class="about-txt">Команда опытных специалистов компании <b>«Aqualand Group»</b> способна выполнить проект, монтаж и установку оборудования для бассейнов и саун высокой степени сложности. Все наши инженеры проходят обучение и курсы повышения квалификации на специальных технических семинарах фирм-производителей.</p>
 					</div>
 					<div class="col-md-6">
@@ -285,7 +381,7 @@
 				</div>
 				<div class="row align-items-center">
 					<div class="col-md-7 order-md-2">
-						<p class="about-txt"><b>«Aqualand Group»</b> является одним из признанных лидеров на рынке Средней Азии и Казахстана среди компаний, занимающихся проектированием и реко- нструкцией бассейнов, поставкой и продажей оборудования для бассейнов.<br>Кроме того, мы производим телескопические павильоны, фильтровальные станции «Aquastar», специальный бордюрный камень для бассейнов и многое другое.</p>
+						<p class="about-txt"><b>«Aqualand Group»</b> является одним из признанных лидеров на рынке Средней Азии и Казахстана среди компаний, занимающихся проектированием и реконструкцией бассейнов, поставкой и продажей оборудования для бассейнов.<br>Кроме того, мы производим телескопические павильоны, фильтровальные станции «Aquastar», специальный бордюрный камень для бассейнов и многое другое.</p>
 						<p class="about-txt">Для надежной и функциональный работы бассейна мы используем только сертифицированные фильтровальные установки и насосные системы для бассейна, средства водоподготовки, дезинфекции, химические препараты по уходу за водой в бассейне.</p>
 					</div>
 					<div class="col-md-5 order-md-1">
@@ -416,6 +512,10 @@
 							<div class="rline rline_select">
 								<select name="salon" class="project-form__input">
 									<option>Выберите шоурум:</option>
+									<option value="г. Астана, ул. Бейсекбаева, 18 Б">г. Астана, ул. Бейсекбаева, 18 Б</option>
+									<option value="г. Алматы, пр. Суюнбая, 53">г. Алматы, пр. Суюнбая, 53</option>
+									<option value="г. Алматы, ул. Саина, 184 Г">г. Алматы, ул. Саина, 184 Г</option>
+									<option value="г. Бишкек, ул. Ахунбаева, 133">г. Бишкек, ул. Ахунбаева, 133</option>
 								</select>
 							</div>
 							<button type="submit" class="btnsubmit project-form__btn">Получить 3D-проект бесплатно</button>
@@ -482,7 +582,7 @@
 						<h3 class="partners-ttl">Наши <span>партнеры</span></h3>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-sm-3 col-6">
 						<img src="images/partner1.png" alt="Aqualand" class="img-r partners-img">
 					</div>
@@ -519,6 +619,9 @@
 					<div class="col-sm-3 col-6">
 						<img src="images/partner12.png" alt="Aqualand" class="img-r partners-img">
 					</div>
+					<div class="col-sm-3 col-6">
+						<img src="images/partner13.png" alt="Aqualand" class="img-r partners-img">
+					</div>
 				</div>
 				<div class="partners-line"></div>
 			</div>
@@ -529,21 +632,21 @@
 				<div class="row">
 					<div class="col">
 						<h3 class="contacts-ttl">Наши <span>контакты</span></h3>
-						<p class="contacts-subttl">Мы работаем по всей территории Казахстана и Кыргызкой Республики</p>
+						<p class="contacts-subttl">Мы работаем по всей территории Казахстана и Кыргызской Республики</p>
 					</div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-md-4 col-sm-6">
 						<div class="contacts-item">
-							<p class="contacts-item__addr">050016 Казахстан, Нур-Султан, пр. Суюнбая, 53</p>
-							<a href="mailto:almaty@aqualand.su" class="contacts-item__eml">almaty@aqualand.su</a>
+							<p class="contacts-item__addr">050016 Казахстан, Алматы,<br>пр. Суюнбая, 53</p>
+							<a href="mailto:almaty@aqualand.su" class="contacts-item__eml">plus@aqualand.su</a>
 							<a href="tel:+77273646905" class="contacts-item__tel">+7 (727) 364 69 05</a>
 							<img src="images/map1.jpg" alt="Aqualand" class="img-r contacts-item__img">
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="contacts-item">
-							<p class="contacts-item__addr">050016 Казахстан, Алматы, ул. Саина 184</p>
+							<p class="contacts-item__addr">050016 Казахстан, Алматы,<br>ул. Саина 184</p>
 							<a href="mailto:plus@aqualand.su" class="contacts-item__eml">plus@aqualand.su</a>
 							<a href="tel:+77273647281" class="contacts-item__tel">+7 (727) 364 72 81</a>
 							<img src="images/map2.jpg" alt="Aqualand" class="img-r contacts-item__img">
@@ -551,7 +654,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="contacts-item">
-							<p class="contacts-item__addr">010008 Казахстан, Астана, ул. Бейсекбаева, 18б</p>
+							<p class="contacts-item__addr">010000 Казахстан, Астана,<br>ул. Бейсекбаева, 18б</p>
 							<a href="mailto:plus@aqualand.su" class="contacts-item__eml">plus@aqualand.su</a>
 							<a href="tel:+77172249185" class="contacts-item__tel">+7 (7172) 24 91 85</a>
 							<img src="images/map3.png" alt="Aqualand" class="img-r contacts-item__img">
@@ -560,7 +663,7 @@
 
 					<div class="col-md-4 col-sm-6">
 						<div class="contacts-item">
-							<p class="contacts-item__addr">72055 Кыргызкая Республика, Бишкек, ул. Ахунбаева 133</p>
+							<p class="contacts-item__addr">72055 Кыргызская Республика, Бишкек, ул. Ахунбаева 133</p>
 							<a href="mailto:bishkek@aqualand.su" class="contacts-item__eml">bishkek@aqualand.su</a>
 							<a href="tel:+9967312)9662702" class="contacts-item__tel">+996 (7312) 966 27 02</a>
 							<img src="images/map4.png" alt="Aqualand" class="img-r contacts-item__img">
@@ -568,7 +671,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="contacts-item">
-							<p class="contacts-item__addr">Россия, Москва, ул.Рябиновая, 53</p>
+							<p class="contacts-item__addr">Россия, Москва,<br>ул. Рябиновая, 53</p>
 							<a href="mailto:shop@betapool.ru" class="contacts-item__eml">shop@betapool.ru</a>
 							<a href="tel:+79037992057" class="contacts-item__tel">+79037992057</a>
 							<img src="images/map5.png" alt="Aqualand" class="img-r contacts-item__img">
@@ -582,17 +685,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 align-self-center col-sm-4">
-						<a href="/"><img src="images/logo.svg" alt="Aqualand" class="foot-logo img-r"></a>
+						<a href="https://aqualand.kz/"><img src="images/logo.svg" alt="Aqualand" class="foot-logo img-r"></a>
 					</div>
 					<div class="col-lg-2 offset-lg-1 col-md-3 col-sm-4">
-						<a href="/" class="foot-link">Главная</a>
 						<a href="https://lp.aqualand.kz/" class="foot-link">Бассейны</a>
 						<a href="bani-i-saynu.html" class="foot-link">русские Бани</a>
 						<a href="bani-i-saynu.html" class="foot-link">финская сауна</a>
 						<a href="hammam.html" class="foot-link">турецкий Хаммам</a>
 					</div>
 					<div class="col-md-2 col-sm-4">
-						<a href="/" class="foot-link">Aqualand Group</a>
+						<a href="#about" class="foot-link anchor">Aqualand Group</a>
 						<a href="#design" class="foot-link anchor">Дизайн проект</a>
 						<a href="#gallery" class="foot-link anchor">Наши работы</a>
 						<a href="#contacts" class="foot-link anchor">Контакты</a>
@@ -601,7 +703,7 @@
 						<div class="foot-soc">
 							<a href="https://www.facebook.com/aqualand.su/" target="_blank" class="foot-soc__link"><img src="images/fb.svg" alt="Aqauland"></a>
 							<a href="https://www.instagram.com/aqualand_group/" target="_blank" class="foot-soc__link"><img src="images/inst.svg" alt="Aqauland"></a>
-							<!-- <a href="" class="foot-soc__link"><img src="images/yt.svg" alt="Aqauland"></a> -->
+							<a href="https://www.youtube.com/channel/UCw3Pp2R9_VJVtLg1UfF0MRg" class="foot-soc__link"><img src="images/yt.svg" alt="Aqauland"></a>
 						</div>
 						<p class="foot-note">«Клуб друзей Aqauland Group» дисконтная карта»</p>
 					</div>

@@ -67,17 +67,97 @@ $(function() {
 		]
 	});
 
-	$('.case-slider').slick({
+	$('.case-slider1').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
 		fade: false,
-		asNavFor: '.case-nav'
+		asNavFor: '.case-nav1'
 	});
-	$('.case-nav').slick({
+	$('.case-nav1').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		asNavFor: '.case-slider',
+		asNavFor: '.case-slider1',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+	$('.case-slider2').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav2'
+	});
+	$('.case-nav2').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider2',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+	$('.case-slider3').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav3'
+	});
+	$('.case-nav3').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider3',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+	$('.case-slider4').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav4'
+	});
+	$('.case-nav4').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider4',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+	$('.case-slider5').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav5'
+	});
+	$('.case-nav5').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider5',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+	});
+
+	$('.case-slider6').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: '.case-nav6'
+	});
+	$('.case-nav6').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.case-slider6',
 		dots: false,
 		arrows: false,
 		focusOnSelect: true,
@@ -99,6 +179,10 @@ $(function() {
 		if (type == 3) {
 			$(this).find('.calculator-content').css('display', 'none');
 			$(this).find('.banya').css('display', 'flex');
+		}
+		if (type == 4) {
+			$(this).find('.calculator-content').css('display', 'none');
+			$(this).find('.sauna').css('display', 'flex');
 		}
 	});
 
@@ -125,5 +209,47 @@ $(function() {
 			}
 		});
 	});
+
+	var trigerHeight = $('.dots-control__img').innerHeight();
+	$('.dots-control').css('height', trigerHeight);
+	$(window).on('resize', function() {
+		var trigerHeight = $('.dots-control__img').innerHeight();
+		$('.dots-control').css('height', trigerHeight);
+	});
 	
+	$('.hover1').mouseover(function() {
+		$('.d1 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d1 span').css('opacity', '0');
+	});
+	$('.hover2').mouseover(function() {
+		$('.d2 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d2 span').css('opacity', '0');
+	});
+	$('.hover3').mouseover(function() {
+		$('.d3 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d3 span').css('opacity', '0');
+	});
+	$('.hover4').mouseover(function() {
+		$('.d4 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d4 span').css('opacity', '0');
+	});
+	$('.hover5').mouseover(function() {
+		$('.d5 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d5 span').css('opacity', '0');
+	});
+	$('.hover6').mouseover(function() {
+		$('.d6 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d6 span').css('opacity', '0');
+	});
+	$('.hover7').mouseover(function() {
+		$('.d7 span').css('opacity', '1');
+	}).mouseout(function() {
+		$('.d7 span').css('opacity', '0');
+	});
 });

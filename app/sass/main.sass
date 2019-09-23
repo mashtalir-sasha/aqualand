@@ -152,8 +152,7 @@ button
 			background-image: url(../images/head-ico.svg)
 			position: absolute
 			bottom: 0
-			left: 50%
-			margin-left: -125.5px
+			left: 0
 	&-ttl
 		position: relative
 		font-family: $semi
@@ -334,11 +333,15 @@ button
 			outline: none
 			position: relative
 			-webkit-appearance: none
+			background-image: url(../images/select-ico.svg)
+			background-size: 41px 41px
+			background-position: 95% 10px
+			background-repeat: no-repeat
 		&_type
 			margin-right: 60px
 			select
 				background-color: #132958
-		&:before
+		/*&:before
 			content: ''
 			width: 41px
 			height: 41px
@@ -346,7 +349,7 @@ button
 			position: absolute
 			top: 8px
 			right: 25px
-			z-index: 2
+			z-index: 2*/
 	&-input
 		display: flex
 		align-items: center
@@ -385,8 +388,8 @@ button
 			z-index: -1
 			opacity: 0
 			margin: 10px 0 0 20px
-			&:checked + .calculator-checkbox__text:before
-				background: #7d7d7d
+			&:checked + .calculator-checkbox__text:after
+				opacity: 1
 		&__text
 			position: relative
 			padding: 0 0 0 40px
@@ -403,6 +406,16 @@ button
 				border-radius: 13px
 				background: #fff
 				transition: .2s
+			&:after
+				content: ''
+				width: 18px
+				height: 18px
+				border-radius: 50%
+				background-color: $accent
+				position: absolute
+				top: 5px
+				left: 5px
+				opacity: 0
 	&-subttl
 		font-family: $bold
 		font-size: 36px
@@ -533,12 +546,14 @@ button
 				height: 60px
 				margin: 40px auto
 		&__txt
-			align-self: center
+			align-self: start
+			margin-top: 25px
 			p
 				font-family: $semi
 				font-size: 20px
 				text-transform: uppercase
 				margin-bottom: 20px
+				min-height: 48px
 			span
 				font-size: 20px
 		&__numb
@@ -677,7 +692,11 @@ button
 		select
 			position: relative
 			-webkit-appearance: none
-		.rline_select
+			background-image: url(../images/select-ico.svg)
+			background-size: 41px 41px
+			background-position: 95% 10px
+			background-repeat: no-repeat
+		/*.rline_select
 			&:before
 				content: ''
 				width: 41px
@@ -686,7 +705,7 @@ button
 				position: absolute
 				top: 8px
 				right: 25px
-				z-index: 1
+				z-index: 1*/
 		&__btn
 			cursor: pointer
 			display: table
@@ -1024,6 +1043,7 @@ button
 			color: #EEEFF2
 			z-index: -1
 			top: -50px
+			left: -50px
 		&__txt
 			font-size: 18px
 			b
@@ -1031,6 +1051,7 @@ button
 				font-weight: normal
 				font-family: $semi
 				text-transform: uppercase
+				min-height: 42px
 		&_bani
 			.advantage-item__img
 				background-image: url(../images/advantage-item_bani.png)
@@ -1074,7 +1095,7 @@ button
 			left: 50%
 			margin-left: -126px
 	&-txt
-		font-size: 20px
+		font-size: 16px
 		margin-bottom: 20px
 		b
 			font-weight: normal
@@ -1093,6 +1114,7 @@ button
 		margin-bottom: 0
 		list-style-type: none
 		&__item
+			cursor: pointer
 			position: relative
 			font-size: 20px
 			margin-bottom: 5px
@@ -1472,7 +1494,8 @@ button
 				width: 60px
 				height: 60px
 		&__txt
-			align-self: center
+			align-self: start
+			margin-top: 25px
 			span
 				font-size: 18px
 				b
@@ -1502,6 +1525,54 @@ button
 	padding: 0
 	.project-form__ttl
 		text-align: center
+
+.dots
+	position: absolute
+	width: 28px
+	height: 28px
+	background-image: url(../images/dot.png)
+	z-index: 1
+	span
+		transition: all ease .3s
+		opacity: 0
+		display: table
+		position: absolute
+		left: 35px
+		top: 2px
+		padding: 3px
+		background-color: $accent
+		font-size: 14px
+		color: #fff
+	&-control
+		position: relative
+		&__img
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+	&.d1
+		top: 35%
+		left: 62%
+	&.d2
+		top: 20%
+		left: 20%
+	&.d3
+		top: 70%
+		left: 70%
+	&.d4
+		top: 5%
+		left: 50%
+	&.d5
+		top: 53%
+		left: 62%
+		span
+			width: 97px
+	&.d6
+		top: 40%
+		left: 32%
+	&.d7
+		top: 59%
+		left: 17%
 
 @keyframes pulse
 	from
@@ -1601,24 +1672,24 @@ button
 			animation-fill-mode: both
 
 .partners.animated
-	.col-sm-3:nth-child(1), .col-sm-3:nth-child(5), .col-sm-3:nth-child(9)
+	.col-sm-3:nth-child(1), .col-sm-3:nth-child(5), .col-sm-3:nth-child(9), .col-sm-3:nth-child(13)
 		img
 			animation-name: fadeIn
 			animation-duration: 0.5s
 			animation-fill-mode: both
-	.col-sm-3:nth-child(2), .col-sm-3:nth-child(6), .col-sm-3:nth-child(10)
+	.col-sm-3:nth-child(2), .col-sm-3:nth-child(6), .col-sm-3:nth-child(10), .col-sm-3:nth-child(14)
 		img
 			animation-name: fadeIn
 			animation-delay: 1s
 			animation-duration: 0.5s
 			animation-fill-mode: both
-	.col-sm-3:nth-child(3), .col-sm-3:nth-child(7), .col-sm-3:nth-child(11)
+	.col-sm-3:nth-child(3), .col-sm-3:nth-child(7), .col-sm-3:nth-child(11), .col-sm-3:nth-child(15)
 		img
 			animation-name: fadeIn
 			animation-delay: 1.5s
 			animation-duration: 0.5s
 			animation-fill-mode: both
-	.col-sm-3:nth-child(4), .col-sm-3:nth-child(8), .col-sm-3:nth-child(12)
+	.col-sm-3:nth-child(4), .col-sm-3:nth-child(8), .col-sm-3:nth-child(12), .col-sm-3:nth-child(16)
 		img
 			animation-name: fadeIn
 			animation-delay: 2s
