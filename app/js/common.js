@@ -9,6 +9,17 @@ $(function() {
 	e.preventDefault();
 	});
 
+	
+	setTimeout(function() {
+		if (window.location.hash!='') {
+			var hashName = window.location.hash;
+			$('html, body').stop().animate({
+				scrollTop: $(hashName).offset().top-100 // отступ от меню
+			}, 500); 
+		}
+	}, 500);
+	
+
 	// Клик по гамбургеру на моб версии
 	$('.nav-mob__link').click(function() {
 		$('.nav-mob').toggleClass('show');
@@ -19,8 +30,14 @@ $(function() {
 
 	// Отправка формы
 	$('form').submit(function() {
+		var option = $('[name="salon"] option:selected').val();
+		if (option == "") {
+			alert('Выберите ближайший к Вам шоурум!');
+			return false;
+		}
 		var data = $(this).serialize();
-		var goalId = $(this).find('input[ name="goal"]').val();
+		var price = $(this).data('price');
+		var link = $(this).data('link');
 		data += '&ajax-request=true';
 		$.ajax({
 			type: 'POST',
@@ -28,10 +45,14 @@ $(function() {
 			dataType: 'json',
 			data: data,
 			success: (function() {
-				$.fancybox.close();
-				$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
-				//gtag('event','submit',{'event_category':'submit','event_action':goalId});
-				//fbq('track', 'Lead');
+				if (price == true) {
+					window.open(link, "_blank");
+					$.fancybox.close();
+					$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
+				} else {
+					$.fancybox.close();
+					$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
+				}
 			})()
 		});
 		return false;
@@ -217,37 +238,37 @@ $(function() {
 		$('.dots-control').css('height', trigerHeight);
 	});
 	
-	$('.hover1').mouseover(function() {
+	$('.hover1, .d1').mouseover(function() {
 		$('.d1 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d1 span').css('opacity', '0');
 	});
-	$('.hover2').mouseover(function() {
+	$('.hover2, .d2').mouseover(function() {
 		$('.d2 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d2 span').css('opacity', '0');
 	});
-	$('.hover3').mouseover(function() {
+	$('.hover3, .d3').mouseover(function() {
 		$('.d3 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d3 span').css('opacity', '0');
 	});
-	$('.hover4').mouseover(function() {
+	$('.hover4, .d4').mouseover(function() {
 		$('.d4 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d4 span').css('opacity', '0');
 	});
-	$('.hover5').mouseover(function() {
+	$('.hover5, .d5').mouseover(function() {
 		$('.d5 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d5 span').css('opacity', '0');
 	});
-	$('.hover6').mouseover(function() {
+	$('.hover6, .d6').mouseover(function() {
 		$('.d6 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d6 span').css('opacity', '0');
 	});
-	$('.hover7').mouseover(function() {
+	$('.hover7, .d7').mouseover(function() {
 		$('.d7 span').css('opacity', '1');
 	}).mouseout(function() {
 		$('.d7 span').css('opacity', '0');

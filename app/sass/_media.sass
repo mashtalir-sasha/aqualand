@@ -175,6 +175,9 @@
 				max-height: 100px
 				img
 					margin: 20px auto
+	.partners
+		&-img
+			height: 95px
 
 //Small: ≥768px max-width: 991px
 +media-breakpoint-down(sm)
@@ -234,6 +237,9 @@
 					left: -20px
 				&.slick-next
 					right: -20px
+		&-nav
+			&__slide
+				height: 60px
 	.dev
 		float: right
 	.hammam
@@ -314,6 +320,9 @@
 			justify-content: space-between
 	.ma20
 		margin: 0 auto 20px
+	.partners
+		&-img
+			height: 75px
 
 //Extra small: ≥576px max-width: 767px
 +media-breakpoint-down(xs)
@@ -333,8 +342,9 @@
 				margin-bottom: 40px
 	.portfolio
 		&-slider
-			img
+			&__slide
 				max-width: 80%
+				max-height: 200px
 	.contacts
 		&-item
 			&__img
@@ -495,7 +505,9 @@
 					margin-bottom: 0
 	.structure
 		&-video
-			min-height: 360px
+			min-height: 300px
+		&-txt
+			font-size: 16px
 	.privilege
 		&-item
 			&_last
